@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dustin's Mobile Mechanic • Austin, TX & Surrounding Areas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-style: normal !important;
+    }
+    .headline-heavy {
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+    }
+    .sub-heavy {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+  </style>
+</head>
+<body class="bg-[#fcfdfd] text-slate-900 antialiased selection:bg-amber-400 selection:text-slate-950 pb-24 md:pb-0">
+
+  <!-- Top Demo Launch Banner (Clean Single Line) -->
+  <aside aria-label="Demo notice" class="bg-slate-950 text-white px-4 py-2 border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-xs gap-3">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0 animate-pulse"></span>
+        <span class="font-bold text-slate-300 truncate">Website Demo Built For Dustin's Mobile Mechanic</span>
+      </div>
+      <a href="https://buy.stripe.com/fZu28j7n03Us15ogpPa7C00" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-slate-950 px-3.5 py-1 rounded-full font-extrabold text-[11px] transition uppercase tracking-wider shrink-0 flex items-center gap-1.5 shadow-sm">
+        <span>Launch For $20</span>
+        <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Modern Floating Header (Single Line Brand & Fast Contact) -->
+  <header class="sticky top-[37px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Brand on ONE Clean Horizontal Line -->
+      <a href="#" class="flex items-center gap-2.5 shrink-0 group">
+        <div class="w-9 h-9 rounded-xl bg-slate-950 text-amber-400 flex items-center justify-center font-black text-base shadow-sm group-hover:scale-105 transition-transform shrink-0">
+          D
+        </div>
+        <span class="text-base sm:text-lg font-black tracking-tight text-slate-950 whitespace-nowrap">
+          Dustin's Mobile Mechanic
+        </span>
+        <span class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[11px] font-bold shrink-0 ml-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+          Austin Metro
+        </span>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 text-xs font-extrabold text-slate-600 uppercase tracking-wider whitespace-nowrap">
+        <a href="#specialized-areas" class="hover:text-slate-950 transition">Services</a>
+        <a href="#service-areas" class="hover:text-slate-950 transition">Service Areas</a>
+        <a href="#how" class="hover:text-slate-950 transition">How It Works</a>
+        <a href="#contact" class="hover:text-slate-950 transition">Contact</a>
+      </nav>
+
+      <!-- Fast Action Direct Line (Single Line Button) -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="sms:5122963084" class="hidden sm:inline-flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-900 px-3 py-2 rounded-xl font-bold text-xs transition whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a.75.75 0 01-1.074-.85 9.99 9.99 0 001.05-3.089C3.899 15.632 3 13.916 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+          <span>Text (512) 296-3084</span>
+        </a>
+        <a href="tel:5122963084" class="bg-slate-950 hover:bg-slate-800 text-white px-3.5 sm:px-4 py-2 rounded-xl font-black text-xs uppercase tracking-wider transition shadow-sm flex items-center gap-1.5 sm:gap-2 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 text-amber-400 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <span>Call 512-296-3084</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section (Bento Grid 2026 Layout) -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-16">
+    
+    <!-- Top Pill Indicator matching his ad -->
+    <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-50 border border-amber-200/80 rounded-full mb-6 text-xs font-bold text-amber-900">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      <span>Mobile Mechanic Servicing Austin & Surrounding Areas</span>
+    </div>
+
+    <!-- Bento Top Row -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch mb-6">
+      
+      <!-- Primary Bento Card -->
+      <div class="lg:col-span-8 bg-white border border-slate-200/90 rounded-3xl p-7 sm:p-10 shadow-sm flex flex-col justify-between">
+        <div>
+          <h1 class="text-3xl sm:text-5xl md:text-6xl headline-heavy text-slate-950 mb-5">
+            Car won't start?<br>
+            Dustin comes to you.
+          </h1>
+          <p class="text-base sm:text-lg font-bold text-slate-600 leading-relaxed max-w-xl mb-6">
+            Mobile mechanic servicing Cedar Creek, Bastrop, Austin, Kyle, San Marcos, Leander, and Round Rock. Reliable on-site repairs right in your driveway, job site, or roadside.
+          </p>
+
+          <!-- Quick Service List Chips directly from his ad -->
+          <div class="flex flex-wrap gap-1.5 mb-8">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-extrabold text-slate-800">Brakes & Rotors</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-extrabold text-slate-800">Starters & Alternators</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-extrabold text-slate-800">A/C Compressors</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-extrabold text-slate-800">Spark Plugs & Coils</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-extrabold text-slate-800">Radiators & Suspension</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-extrabold text-slate-800">Batteries</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-6 border-t border-slate-100">
+          <a href="tel:5122963084" class="bg-slate-950 hover:bg-slate-800 text-white px-7 py-4 rounded-2xl font-black text-sm uppercase tracking-wider transition shadow-md hover:shadow-lg flex items-center justify-center gap-2.5">
+            <svg class="w-4 h-4 text-amber-400 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            <span>Call Dustin: (512) 296-3084</span>
+          </a>
+          <a href="sms:5122963084" class="bg-amber-500 hover:bg-amber-400 text-slate-950 px-7 py-4 rounded-2xl font-black text-sm uppercase tracking-wider transition shadow-sm flex items-center justify-center gap-2.5">
+            <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a.75.75 0 01-1.074-.85 9.99 9.99 0 001.05-3.089C3.899 15.632 3 13.916 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+            <span>Text Your Location & Issue</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Secondary Bento Card: Direct Line with Dustin's Exact Ad Quote -->
+      <div class="lg:col-span-4 bg-slate-950 text-white rounded-3xl p-7 sm:p-8 flex flex-col justify-between shadow-xl border border-slate-800">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-6">
+            <span class="text-xs font-black uppercase tracking-wider text-amber-400">Direct Contact</span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-800 text-[10px] font-bold uppercase">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              Available Today
+            </span>
+          </div>
+
+          <h2 class="text-xl sub-heavy text-white mb-2">Questions? Ask Dustin</h2>
+          <p class="text-xs font-bold text-slate-400 leading-relaxed mb-6">
+            "Feel free to contact with any questions at 512-296-3084 (Dustin). Thank you."
+          </p>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 mb-6">
+            <span class="text-[10px] font-black uppercase tracking-widest text-slate-400 block mb-1">Direct Call & Text</span>
+            <a href="tel:5122963084" class="text-xl sm:text-2xl font-black text-amber-400 hover:text-amber-300 transition block">
+              512-296-3084
+            </a>
+            <span class="text-[11px] font-bold text-slate-400 block mt-1">Dustin &bull; Austin & Surrounding Areas</span>
+          </div>
+        </div>
+
+        <div class="space-y-2 border-t border-slate-800/80 pt-4 text-xs font-bold text-slate-300">
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Tow truck needed:</span>
+            <span class="text-emerald-400 font-black">No ($0 Tow Fee)</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Service:</span>
+            <span class="text-white font-black">On-site at your location</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Response time:</span>
+            <span class="text-white font-black">Fast Call / Text Response</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 7 Surrounding Service Areas Pills matching his ad -->
+    <div class="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <span class="text-xs font-black uppercase tracking-wider text-slate-500 shrink-0">
+          Areas Serviced:
+        </span>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-black text-slate-900">Austin</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-black text-slate-900">Cedar Creek</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-black text-slate-900">Bastrop</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-black text-slate-900">Kyle</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-black text-slate-900">San Marcos</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-black text-slate-900">Leander</span>
+          <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-black text-slate-900">Round Rock</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SPECIALIZED AREAS SECTION (Categorized Bento Architecture) -->
+  <section id="specialized-areas" class="py-16 md:py-20 bg-slate-50 border-y border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Header with Clear Subtitle -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-100/80 rounded-md text-xs font-black uppercase tracking-wider text-amber-800 mb-3">
+            <span>Specialized Areas</span>
+            <span>&bull;</span>
+            <span>All 10 Services Performed On-Site</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl headline-heavy text-slate-950">
+            Professional Driveway Repairs
+          </h2>
+        </div>
+        <div class="text-xs font-bold text-slate-500 max-w-sm">
+          No tow trucks. Dustin brings OEM-spec parts and heavy-duty diagnostic tools straight to your location.
+        </div>
+      </div>
+
+      <!-- High-End 5-Category Bento Architecture -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-5 mb-8">
+        
+        <!-- Module 1: Brakes & Rotors (Span 7) -->
+        <div class="md:col-span-7 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-md">
+                01 &bull; Stopping System
+              </span>
+              <span class="text-xs font-black text-slate-400 uppercase">Most Requested</span>
+            </div>
+            <h3 class="text-2xl sub-heavy text-slate-950 mb-2">Brakes & Rotors</h3>
+            <p class="text-xs sm:text-sm font-bold text-slate-600 leading-relaxed mb-6">
+              Squealing, grinding, or soft brake pedal? Dustin replaces pads and rotors right in your driveway in about 45 to 60 minutes.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+              <div class="bg-slate-50 border border-slate-200/70 rounded-xl p-3.5">
+                <span class="text-xs font-black uppercase text-slate-950 block mb-1">Brakes Service</span>
+                <span class="text-xs font-bold text-slate-500 block">Ceramic/semi-metallic pads, caliper lubrication & brake hardware.</span>
+              </div>
+              <div class="bg-slate-50 border border-slate-200/70 rounded-xl p-3.5">
+                <span class="text-xs font-black uppercase text-slate-950 block mb-1">Rotors Service</span>
+                <span class="text-xs font-bold text-slate-500 block">Front and rear disc replacement to eliminate steering wheel vibration.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-black">
+            <span class="text-slate-500 uppercase">Driveway Turnaround: Under 1 hour</span>
+            <a href="tel:5122963084" class="text-amber-600 hover:text-amber-700 uppercase tracking-wider flex items-center gap-1">
+              <span>Call For Brake Estimate</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 2: Starting & Electrical: Starters, Alternators, Batteries (Span 5) -->
+        <div class="md:col-span-5 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-md">
+                02 &bull; No-Start Repairs
+              </span>
+              <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">$0 Tow Fee</span>
+            </div>
+            <h3 class="text-2xl sub-heavy text-slate-950 mb-2">Starters, Alternators & Batteries</h3>
+            <p class="text-xs sm:text-sm font-bold text-slate-600 leading-relaxed mb-6">
+              Vehicle clicking, cranking slowly, or dying while driving? Electrical testing and fast swaps on-site.
+            </p>
+
+            <div class="space-y-2.5 mb-6">
+              <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-200/70 text-xs">
+                <span class="font-black text-slate-950">Starters</span>
+                <span class="font-bold text-slate-500">Fixes clicking & no-crank</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-200/70 text-xs">
+                <span class="font-black text-slate-950">Alternators</span>
+                <span class="font-bold text-slate-500">Fixes battery light & stalling</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-200/70 text-xs">
+                <span class="font-black text-slate-950">Batteries</span>
+                <span class="font-bold text-slate-500">On-site delivery & terminal install</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-black">
+            <span class="text-slate-500 uppercase">Emergency Dispatch</span>
+            <a href="tel:5122963084" class="text-amber-600 hover:text-amber-700 uppercase tracking-wider flex items-center gap-1">
+              <span>Call For Electric</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 3: Engine Ignition: Spark Plugs & Coils (Span 4) -->
+        <div class="md:col-span-4 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-md">
+                03 &bull; Engine Tune-Up
+              </span>
+            </div>
+            <h3 class="text-xl sub-heavy text-slate-950 mb-2">Spark Plugs & Coils</h3>
+            <p class="text-xs font-bold text-slate-600 leading-relaxed mb-4">
+              Engine shaking, misfiring, or check engine light flashing? Dustin pinpoints the exact cylinder and swaps worn plugs and coil packs.
+            </p>
+
+            <div class="space-y-2 mb-4 text-xs font-bold text-slate-700">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span><strong>Spark Plugs:</strong> OEM gapped plugs for power</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span><strong>Coils:</strong> Individual coil pack replacements</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="tel:5122963084" class="text-xs font-black uppercase text-slate-950 hover:text-amber-600 transition flex items-center justify-between pt-4 border-t border-slate-100">
+            <span>Diagnose Engine Misfire</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Module 4: Climate & Overheating: Radiators & A/C Compressors (Span 4) -->
+        <div class="md:col-span-4 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-md">
+                04 &bull; Texas Cooling
+              </span>
+            </div>
+            <h3 class="text-xl sub-heavy text-slate-950 mb-2">Radiators & A/C Compressors</h3>
+            <p class="text-xs font-bold text-slate-600 leading-relaxed mb-4">
+              Keep your vehicle safe and cool in the Texas heat. Dustin fixes coolant leaks, broken belts, overheating, and warm A/C air.
+            </p>
+
+            <div class="space-y-2 mb-4 text-xs font-bold text-slate-700">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span><strong>Radiators:</strong> Swaps, hoses, thermostat & coolant</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span><strong>A/C Compressors:</strong> Restores ice-cold air</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="tel:5122963084" class="text-xs font-black uppercase text-slate-950 hover:text-amber-600 transition flex items-center justify-between pt-4 border-t border-slate-100">
+            <span>Fix Overheating / AC</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Module 5: Suspension & Ride Handling (Span 4) -->
+        <div class="md:col-span-4 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-md">
+                05 &bull; Ride Safety
+              </span>
+            </div>
+            <h3 class="text-xl sub-heavy text-slate-950 mb-2">Suspension & Steering</h3>
+            <p class="text-xs font-bold text-slate-600 leading-relaxed mb-4">
+              Loud clunks over bumps, drifting on the highway, or loose steering? Complete on-site front and rear suspension repairs.
+            </p>
+
+            <div class="space-y-2 mb-4 text-xs font-bold text-slate-700">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span><strong>Suspension:</strong> Struts, shocks & control arms</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span><strong>Steering:</strong> Tie rod ends & ball joints</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="tel:5122963084" class="text-xs font-black uppercase text-slate-950 hover:text-amber-600 transition flex items-center justify-between pt-4 border-t border-slate-100">
+            <span>Check Suspension Noise</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Master Checklist Pill Bar (All 10 Items from Dustin's Ad) -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-5 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-slate-950 block">All 10 Specialized Areas from Dustin's Ad:</span>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Brakes</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Rotors</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Starters</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Alternators</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; A/C Compressors</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Spark Plugs</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Coils</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Radiators</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Suspension</span>
+            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">&bull; Batteries</span>
+          </div>
+        </div>
+        <a href="tel:5122963084" class="bg-slate-950 hover:bg-slate-800 text-white px-5 py-3 rounded-xl text-xs font-black uppercase tracking-wider transition shrink-0 text-center">
+          Ask Dustin: 512-296-3084
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICE AREAS SECTION (Matching the 7 Towns from Dustin's Ad) -->
+  <section id="service-areas" class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-2xl mb-12">
+        <span class="text-xs font-black uppercase tracking-wider text-amber-700 bg-amber-100/80 px-2.5 py-1 rounded-md inline-block mb-3">
+          Surrounding Area Coverage
+        </span>
+        <h2 class="text-3xl sm:text-4xl headline-heavy text-slate-950 mb-3">
+          Areas Dustin Services
+        </h2>
+        <p class="text-base font-bold text-slate-600 leading-relaxed">
+          "Mobile mechanic servicing the surrounding area such as Cedar Creek, Bastrop, Austin, Kyle, San Marcos, Leander, and Round Rock."
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        
+        <div class="bg-[#fafbfc] border border-slate-200/90 rounded-2xl p-5">
+          <span class="text-xs font-black text-emerald-700 uppercase block mb-1">Servicing</span>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-1">Austin</h3>
+          <p class="text-xs font-bold text-slate-500">Central, South, North, East, and West Austin driveways.</p>
+        </div>
+
+        <div class="bg-[#fafbfc] border border-slate-200/90 rounded-2xl p-5">
+          <span class="text-xs font-black text-emerald-700 uppercase block mb-1">Servicing</span>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-1">Cedar Creek</h3>
+          <p class="text-xs font-bold text-slate-500">Highway 21 & Highway 71 corridor residential & rural.</p>
+        </div>
+
+        <div class="bg-[#fafbfc] border border-slate-200/90 rounded-2xl p-5">
+          <span class="text-xs font-black text-emerald-700 uppercase block mb-1">Servicing</span>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-1">Bastrop</h3>
+          <p class="text-xs font-bold text-slate-500">Downtown Bastrop, Tahitian Village, and surrounding.</p>
+        </div>
+
+        <div class="bg-[#fafbfc] border border-slate-200/90 rounded-2xl p-5">
+          <span class="text-xs font-black text-emerald-700 uppercase block mb-1">Servicing</span>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-1">Kyle</h3>
+          <p class="text-xs font-bold text-slate-500">I-35, Kyle Parkway, Plum Creek, and residential.</p>
+        </div>
+
+        <div class="bg-[#fafbfc] border border-slate-200/90 rounded-2xl p-5">
+          <span class="text-xs font-black text-emerald-700 uppercase block mb-1">Servicing</span>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-1">San Marcos</h3>
+          <p class="text-xs font-bold text-slate-500">Texas State area, Wonder World Dr, and local neighborhoods.</p>
+        </div>
+
+        <div class="bg-[#fafbfc] border border-slate-200/90 rounded-2xl p-5">
+          <span class="text-xs font-black text-emerald-700 uppercase block mb-1">Servicing</span>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-1">Leander</h3>
+          <p class="text-xs font-bold text-slate-500">US-183, Crystal Falls, Bagdad Rd, and local driveways.</p>
+        </div>
+
+        <div class="bg-[#fafbfc] border border-slate-200/90 rounded-2xl p-5">
+          <span class="text-xs font-black text-emerald-700 uppercase block mb-1">Servicing</span>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-1">Round Rock</h3>
+          <p class="text-xs font-bold text-slate-500">Dell campus, I-35, University Blvd, and neighborhoods.</p>
+        </div>
+
+        <div class="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-black text-amber-800 uppercase block mb-1">Need Service?</span>
+            <h3 class="text-lg sub-heavy text-slate-950 mb-1">Have Questions?</h3>
+            <p class="text-xs font-bold text-slate-600">Text your location directly to Dustin.</p>
+          </div>
+          <a href="tel:5122963084" class="text-xs font-black uppercase text-slate-950 hover:text-amber-700 transition mt-2">
+            Call (512) 296-3084 &rarr;
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How It Works (Simple 3 Steps) -->
+  <section id="how" class="py-16 md:py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-black uppercase tracking-wider text-amber-700 bg-amber-100/80 px-2.5 py-1 rounded-md inline-block mb-3">
+          Plain & Simple
+        </span>
+        <h2 class="text-3xl sm:text-4xl headline-heavy text-slate-950 mb-3">
+          How it works
+        </h2>
+        <p class="text-base font-bold text-slate-600">
+          No tow trucks. No shop waiting rooms. Here is how easy it is:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white border border-slate-200/90 rounded-2xl p-7 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-slate-950 text-amber-400 font-black flex items-center justify-center text-sm mb-5">
+            1
+          </div>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-2">Call or text Dustin</h3>
+          <p class="text-sm font-bold text-slate-600 leading-relaxed">
+            Tell Dustin what vehicle you drive, where you are located, and what is happening.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200/90 rounded-2xl p-7 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-slate-950 text-amber-400 font-black flex items-center justify-center text-sm mb-5">
+            2
+          </div>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-2">Dustin drives to you</h3>
+          <p class="text-sm font-bold text-slate-600 leading-relaxed">
+            Stay comfortable at home or work. Dustin arrives with the right tools and replacement parts.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200/90 rounded-2xl p-7 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-slate-950 text-amber-400 font-black flex items-center justify-center text-sm mb-5">
+            3
+          </div>
+          <h3 class="text-lg sub-heavy text-slate-950 mb-2">Fixed right on the spot</h3>
+          <p class="text-sm font-bold text-slate-600 leading-relaxed">
+            Watch the repair done in front of you. Test drive your car and pay only when satisfied.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Direct Contact Banner with Dustin's Exact Ad Quote -->
+  <section id="contact" class="py-14 bg-slate-950 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <span class="text-xs font-black uppercase tracking-wider text-amber-400 block mb-2">Direct Contact</span>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl headline-heavy text-white mb-4">
+        "Feel free to contact with any questions at 512-296-3084 (Dustin). Thank you."
+      </h2>
+      <p class="text-sm font-bold text-slate-300 max-w-xl mx-auto mb-8">
+        Mobile mechanic servicing Cedar Creek, Bastrop, Austin, Kyle, San Marcos, Leander, and Round Rock.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="tel:5122963084" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-wider transition shadow-lg flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <span>Call 512-296-3084</span>
+        </a>
+        <a href="sms:5122963084" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-wider transition border border-slate-700 flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a.75.75 0 01-1.074-.85 9.99 9.99 0 001.05-3.089C3.899 15.632 3 13.916 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+          <span>Send A Text</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Business Footer -->
+  <footer class="bg-white border-t border-slate-200/90 pt-16 pb-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand & Service Info -->
+        <div>
+          <div class="flex items-center gap-2.5 mb-3">
+            <div class="w-8 h-8 rounded-lg bg-slate-950 text-amber-400 font-black text-sm flex items-center justify-center">
+              D
+            </div>
+            <span class="text-sm sub-heavy text-slate-950">Dustin's Mobile Mechanic</span>
+          </div>
+          <p class="text-xs font-bold text-slate-500 leading-relaxed mb-3">
+            Mobile mechanic servicing Cedar Creek, Bastrop, Austin, Kyle, San Marcos, Leander, and Round Rock.
+          </p>
+          <span class="inline-block text-[11px] font-black uppercase text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">
+            100% On-Site Service
+          </span>
+        </div>
+
+        <!-- Direct Contact Details -->
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-slate-950 block mb-3">Contact Dustin</span>
+          <ul class="space-y-2 text-xs font-bold text-slate-600">
+            <li><span class="text-slate-400">Mechanic:</span> <strong class="text-slate-900">Dustin</strong></li>
+            <li><span class="text-slate-400">Phone:</span> <a href="tel:5122963084" class="text-slate-950 hover:text-amber-600 font-black">512-296-3084</a></li>
+            <li><span class="text-slate-400">Text:</span> <a href="sms:5122963084" class="text-slate-950 hover:text-amber-600 font-black">512-296-3084</a></li>
+            <li><span class="text-slate-400">Location:</span> Austin, TX & Surrounding</li>
+          </ul>
+        </div>
+
+        <!-- 10 Specialized Areas List -->
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-slate-950 block mb-3">Specialized Areas</span>
+          <div class="flex flex-wrap gap-1.5 text-[11px] font-bold text-slate-700">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Brakes</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Rotors</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Starters</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Alternators</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">A/C Compressors</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Spark Plugs</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Coils</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Radiators</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Suspension</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Batteries</span>
+          </div>
+        </div>
+
+        <!-- Exact Serviced Towns -->
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-slate-950 block mb-3">Surrounding Areas</span>
+          <div class="flex flex-wrap gap-1.5 text-[11px] font-bold text-slate-700">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Cedar Creek</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Bastrop</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Austin</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Kyle</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">San Marcos</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Leander</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Round Rock</span>
+          </div>
+          <span class="block text-[11px] font-bold text-slate-400 mt-3">
+            7 Days a Week &bull; On-Site Dispatch
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Links -->
+      <div class="border-t border-slate-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-bold text-slate-400 text-center sm:text-left">
+        <p>&copy; 2026 Dustin's Mobile Mechanic &bull; Austin & Surrounding Areas. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="tel:5122963084" class="text-slate-700 hover:text-slate-950">Call: 512-296-3084</a>
+          <span>&bull;</span>
+          <a href="https://buy.stripe.com/fZu28j7n03Us15ogpPa7C00" target="_blank" class="text-amber-600 hover:text-amber-500 font-black">Claim Website ($20)</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Action Bar -->
+  <aside aria-label="Mobile contact actions" class="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 z-40 flex items-center gap-2.5 shadow-lg">
+    <a href="tel:5122963084" class="flex-1 bg-slate-950 hover:bg-slate-800 text-white font-black text-xs uppercase tracking-wider py-3.5 rounded-xl text-center flex items-center justify-center gap-2 shadow-sm">
+      <svg class="w-4 h-4 text-amber-400 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+      <span>Call Dustin</span>
+    </a>
+    <a href="sms:5122963084" class="flex-1 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-wider py-3.5 rounded-xl text-center flex items-center justify-center gap-2 shadow-sm">
+      <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a.75.75 0 01-1.074-.85 9.99 9.99 0 001.05-3.089C3.899 15.632 3 13.916 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+      <span>Text Dustin</span>
+    </a>
+  </aside>
+
+</body>
+</html>
